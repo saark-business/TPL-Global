@@ -101,18 +101,14 @@ export default function RootLayout({
         f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M8PTDHG2');`}
         </Script>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-YN7C1JVPV5"
-          strategy="afterInteractive"
-        />
-        <Script id="ga-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YN7C1JVPV5"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
             gtag('config', 'G-YN7C1JVPV5');
-          `}
-        </Script>
+        </script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
